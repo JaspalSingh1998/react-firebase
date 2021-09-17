@@ -32,7 +32,6 @@ function SignUpFormBase(props) {
     firebase
       .doCreateUserWithEmailAndPassword(email, passwordOne)
       .then((authUser) => {
-        console.log(authUser);
         history.push(ROUTES.HOME);
       })
       .catch((error) => {
